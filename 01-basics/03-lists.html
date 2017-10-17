@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>HTML Lists - usage and more</title>
+  <meta name="author" content="KinGKriS">
+  <style>
+    body{
+      margin: 0;
+      padding-bottom: 30px;
+    }
+    html{
+      font-size: 20px;
+      margin: 0;
+    }
+    .logo{
+      font-size: 40px;
+      font-weight: normal;
+      color: crimson
+    }
+    .help{
+      font-size: 14px;
+      font-weight: normal;
+    }
+    .pre{
+      white-space: pre;
+      font-size: 14px;
+      color: #444;
+      font-family: sans-serif;
+    }
+    .questions{
+      background-color: rgba(0,0,0,.5);
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      border-radius: 10px 0 0 10px;
+      font-size: 14px;
+      font-family: sans-serif;
+      color: #FFF;
+      z-index: 1;
+    }
+
+  .site-footer{
+    background-color: #cccfcf;
+    padding: 10px;
+    position: fixed;
+    left: 0;right: 0;
+    bottom: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .bdr{
+    border: dashed 1px red;
+  }
+  .bluebdr{
+    border: dotted 1px blue;
+  }
+  .list-wrap{
+    padding: 0;
+    background-color: #f3f3f3;
+    border: solid 1px #CCC;
+    max-width: 900px;
+    margin: 40px auto;
+  }
+
+  </style>
+
+</head>
+<body>
+  <header>
+    <h1>HTML Lists - usage and more</h1>
+  </header>
+
+
+  <ul>
+    <li>Ordered Lists - <code>&lt;ol&gt; - &lt;li&gt;</code></li>
+    <li>Un Ordered Lists - <code>&lt;ul&gt; - &lt;li&gt;</code></li>
+    <li>Definition Lists - <code>&lt;dl&gt; - &lt;dt&gt; &lt;dd&gt;</code></li>
+  </ul>
+
+
+  <h2>Ordered List</h2>
+  <div class="list-wrap">
+    <ol class="bdr" start="5" type="">
+      <li>List item</li>
+      <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate deserunt eius adipisci vel iusto explicabo architecto</p></li>
+      <li class="bluebdr">List item</li>
+      <li>List item</li>
+      <li>List item</li>
+    </ol>
+  </div><!-- /.list-wrap -->
+
+  <h2>Un ordered List</h2>
+  <ul class="bdr">
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+  </ul>
+
+<h2>Nested Lists</h2>
+<ul>
+  <li>List item 01</li>
+  <li>List item 02</li>
+  <li>List item 03</li>
+  <li>List item 04
+    <ul>
+      <li>sublist item 001</li>
+      <li>sublist item 002</li>
+      <li>sublist item 003
+        <ul>
+          <li>sub sub list item 0001</li>
+          <li>sub sub list item 0002</li>
+          <li>sub sub list item 0003</li>
+          <li>sub sub list item 0004</li>
+          <li>sub sub list item 0005</li>
+        </ul>
+      </li>
+      <li>sublist item 004</li>
+      <li>sublist item 005</li>
+    </ul>
+  </li>
+  <li>List item 05</li>
+  <li>List item 06</li>
+  <li>List item 07
+    <ol>
+      <li>sublist item 001</li>
+      <li>sublist item 002</li>
+      <li>sublist item 003
+        <ul>
+          <li>sub sub list item 0001</li>
+          <li>sub sub list item 0002</li>
+          <li>sub sub list item 0003</li>
+          <li>sub sub list item 0004</li>
+          <li>sub sub list item 0005</li>
+        </ul>
+      </li>
+      <li>sublist item 004</li>
+      <li>sublist item 005</li>
+    </ol>
+  </li>
+  <li>List item 08</li>
+  <li>List item 09</li>
+  <li>List item 10</li>
+</ul>
+
+
+<h2>My Friends</h2>
+<ul>
+  <li>
+    <h3>My Friend Name</h3>
+    <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
+    <p>Some details about him</p>
+  </li>
+  <li>
+    <h3>My Friend Name</h3>
+    <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
+    <p>Some details about him</p>
+  </li>
+  <li>
+    <h3>My Friend Name</h3>
+    <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
+    <p>Some details about him</p>
+  </li>
+  <li>
+    <h3>My Friend Name</h3>
+    <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
+    <p>Some details about him</p>
+  </li>
+  <li>
+    <h3>My Friend Name</h3>
+    <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
+    <p>Some details about him</p>
+  </li>
+</ul>
+
+
+
+
+
+
+  <p class="site-footer">&#169; 2017, &#174;KinGKriS&#8482;  all rights reserved</p>
+
+
+<div class="questions">
+  <h2>Questions?</h2>
+  <ul>
+    <li>What kind of element is it?</li>
+    <li>What kind of content can come inside it?</li>
+    <li>Who can be its parents?</li>
+    <li>What are its default styles?</li>
+    <li>Are there any specific Attributes?</li>
+    <li>Closing Tag?</li>
+  </ul>
+</div><!-- /.questions -->
+
+
+
+</body>
+</html>
