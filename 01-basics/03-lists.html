@@ -6,6 +6,9 @@
   <title>HTML Lists - usage and more</title>
   <meta name="author" content="KinGKriS">
   <style>
+    *{
+      box-sizing: border-box;
+    }
     body{
       margin: 0;
       padding-bottom: 30px;
@@ -66,7 +69,71 @@
     margin: 40px auto;
   }
 
-  </style>
+
+  .wrap{
+    background-color: #e7ebeb;
+    margin: 30px 0;
+    padding: 20px;
+  }
+  .wrap h2{
+    font-size: 48px;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: solid 5px #7B1FA2;
+    color: #9C27B0;
+  }
+
+  .friends{
+    max-width: 1000px;
+    margin: 10px auto;
+    padding-left: 0;/* overriding default padding*/
+    list-style: none;
+  }
+  .friends:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .friends li{
+    padding: 0;
+  }
+  @media (min-width: 480px) {
+    .friends li{
+      padding: 10px;
+      float: left;
+      width: 50%;
+    }
+  }
+  @media (min-width: 768px) {
+    .friends li{
+      width: 33.3333%;
+    }
+  }
+  @media (min-width: 980px) {
+    .friends li{
+      width: 25%;
+    }
+  }
+  .friends li div{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    border: solid 1px blue;
+  }
+  .friends h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0 0 10px;
+    line-height: 30px;
+    color: #444;
+  }
+  .friends img{
+    width: 100%;
+    height: auto;
+  }
+
+</style>
 
 </head>
 <body>
@@ -93,6 +160,7 @@
     </ol>
   </div><!-- /.list-wrap -->
 
+<hr />
   <h2>Un ordered List</h2>
   <ul class="bdr">
     <li>List item</li>
@@ -100,6 +168,17 @@
     <li>List item</li>
     <li>List item</li>
   </ul>
+<hr />
+  <h2>Definition List</h2>
+  <dl>
+    <dt>Coffee</dt>
+    <dd>CCD - Famous for its tagline and coffees</dd>
+    <dd>Barista</dd>
+    <dd>Cuppa Coffee</dd>
+    <dt>Tea</dt>
+    <dd>Chaipoint</dd>
+    <dd>Ramji Chaiwale</dd>
+  </dl>
 
 <h2>Nested Lists</h2>
 <ul>
@@ -148,34 +227,88 @@
 </ul>
 
 
-<h2>My Friends</h2>
-<ul>
-  <li>
-    <h3>My Friend Name</h3>
-    <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
-    <p>Some details about him</p>
-  </li>
-  <li>
-    <h3>My Friend Name</h3>
-    <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
-    <p>Some details about him</p>
-  </li>
-  <li>
-    <h3>My Friend Name</h3>
-    <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
-    <p>Some details about him</p>
-  </li>
-  <li>
-    <h3>My Friend Name</h3>
-    <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
-    <p>Some details about him</p>
-  </li>
-  <li>
-    <h3>My Friend Name</h3>
-    <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
-    <p>Some details about him</p>
-  </li>
-</ul>
+<div class="wrap"> 
+  <h2>My Friends</h2>
+  <ul class="friends">
+    <li>
+      <div>
+        <h3>My Friend Name</h3>
+        <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
+        <p>Some details about him</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3>My Friend Name</h3>
+        <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
+        <p>Some details about him</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3>My Friend Name</h3>
+        <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
+        <p>Some details about him</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3>My Friend Name</h3>
+        <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
+        <p>Some details about him</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3>My Friend Name</h3>
+        <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
+        <p>Some details about him</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3>My Friend Name</h3>
+        <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
+        <p>Some details about him</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3>My Friend Name</h3>
+        <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
+        <p>Some details about him</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3>My Friend Name</h3>
+        <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
+        <p>Some details about him</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3>My Friend Name</h3>
+        <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
+        <p>Some details about him</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3>My Friend Name</h3>
+        <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
+        <p>Some details about him</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h3>My Friend Name</h3>
+        <img src="https://api.fnkr.net/testimg/150x200/96d62b/FFF/?text=My-Friend" alt="my friend">
+        <p>Some details about him</p>
+      </div>
+    </li>
+  </ul>
+</div><!-- /.wrap -->
 
 
 
