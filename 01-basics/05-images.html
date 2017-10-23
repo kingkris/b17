@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>IMG tag - usage and more</title>
+  <meta name="author" content="KinGKriS">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body{
+      margin: 0;
+      padding-bottom: 30px;
+      font-family: sans-serif;
+      font-size: 16px;
+      color: #444;
+    }
+    html{
+      font-size: 20px;
+      margin: 0;
+    }
+    .questions{
+      background-color: rgba(0,0,0,.5);
+      padding: 20px;
+      position: fixed;
+      bottom: 30px;
+      right: 0;
+      border-radius: 10px 0 0 10px;
+      font-size: 14px;
+      font-family: sans-serif;
+      color: #FFF;
+      z-index: 1;
+    }
+    .questions h2{
+      margin: 0;
+      font-weight: normal;
+    }
+    .questions ul{
+      margin: 0;
+    }
+    .site-footer{
+      background-color: #cccfcf;
+      padding: 10px;
+      position: fixed;
+      left: 0;right: 0;
+      bottom: 0;
+      font-size: 14px;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+
+
+
+    .blue-dotted-bdr{
+      border: dotted 1px blue;
+    }
+
+</style>
+
+</head>
+<body>
+  <header>
+    <h1>IMG tag - usage and more</h1>
+  </header>
+
+
+<div class="container">
+  <div class="wrap bg-lightblue">
+    <a name="Images"></a>
+    <h2>Blue</h2>
+    <img src="img/logo-jpeg-100.jpg" alt="Logo ">
+    <img src="img/logo-jpeg-80.jpg" alt="Logo ">
+    <img src="img/logo-jpeg-50.jpg" alt="Logo ">
+    <img src="img/logo-jpeg-20.jpg" alt="Logo ">
+    <img src="img/logo-gif.gif" alt="Logo ">
+    <img src="img/logo-png-8.png" alt="Logo ">
+    <img src="img/logo-png-24.png" alt="Logo ">
+    <img src="img/logo-png-24.png" alt="Logo" width="1000">
+    <img src="img/logo-svg.svg" alt="logo" />
+    <img src="img/logo-svg.svg" alt="logo" width="1000" />
+
+
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAABaCAYAAADNegj3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkQ3QjQxREMwQUZDMTExRTc4NjVDOTVDREJDRjJBRTJCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkQ3QjQxREMxQUZDMTExRTc4NjVDOTVDREJDRjJBRTJCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RDdCNDFEQkVBRkMxMTFFNzg2NUM5NUNEQkNGMkFFMkIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RDdCNDFEQkZBRkMxMTFFNzg2NUM5NUNEQkNGMkFFMkIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6tpX/lAAANvElEQVR42uycC3BU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" alt="" />
+
+
+  </div><!-- /.wrap bg-blue -->
+
+</div><!-- /.container -->
+
+
+
+  <p class="site-footer">&#169; 2017, &#174;KinGKriS&#8482;  all rights reserved</p>
+
+
+<div class="questions">
+  <h2>Questions?</h2>
+  <ul>
+    <li>What kind of element is it?</li>
+    <li>What kind of content can come inside it?</li>
+    <li>Who can be its parents?</li>
+    <li>What are its default styles?</li>
+    <li>Are there any specific Attributes?</li>
+    <li>Closing Tag?</li>
+  </ul>
+</div><!-- /.questions -->
+
+
+
+
+</body>
+</html>
