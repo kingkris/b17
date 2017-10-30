@@ -34,7 +34,8 @@ Class Selectors
 	....
 } 
 ======================
-a class name 
+a class name
+		* can be alpha numeric
 		* must not start with a number, 
 		* must not have special characters apart from hyphen and underscore 
 
@@ -157,4 +158,51 @@ a{
 .menu ::selection{
 	
 }
+
+
+.lead-text{
+	font-size: 20px;
+	margin: 15px 50px;
+}
+.lead-text::first-letter{
+	font-size: 40px;
+	color: crimson
+}
+/*
+.lead-text::before{
+	content: "\007e \00b5 :: Before - -- - ";
+}
+*/
+.lead-text::after{
+	content: "\007e \00b5 :: After - -- - ";
+}
+
+
+.chapter-title{
+	margin: 15px 50px;
+	color: crimson;
+	border-bottom-style: solid;
+	font-weight: normal;
+}
+.chapter-title:before{
+	content: "Chapter - ";
+	font-weight: bold;
+	font-style: italic;
+}
+
+[data-text]{
+	color: green;
+	font-size: 2em
+}
+[href]{
+	text-decoration: overline;
+	font-size: 2em
+}
+
+abbr[title]{
+	font-size: 2em;
+	cursor: pointer;
+}
+
+
 
