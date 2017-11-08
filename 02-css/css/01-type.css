@@ -223,9 +223,11 @@ body{
 }
 .lh-demo h2{
   margin: 0;
-  background-color: crimson;
-  line-height: 60px;
   padding: 0 20px;
+
+  background-color: crimson;
+
+  line-height: 60px;
   font-family: 'Indie Flower', cursive;
   color: #FFF;
 
@@ -233,14 +235,56 @@ body{
 .anim-demo{
   margin: 0;
   padding: 10px 20px;
+
   font-size: 20px;
   line-height: 1.4;
   font-style: normal;
+
   transition: all 1000ms ease;
 }
 .lh-demo p:hover{
   font-style: italic;
   line-height: 2;
+}
+
+.b1{
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.5em;
+  line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+}
+.b2{
+  font: italic 300 1.5em/1.4 'Roboto', sans-serif;
+}
+.b3{
+  font: 1.5em/1.4 'Roboto', sans-serif;
+}
+.b4{
+  font: italic 300 1.5em/1.4; 
+}
+
+.c1{text-transform: uppercase;}
+.c2{text-transform: lowercase;}
+.c3{text-transform: capitalize;}
+.c4{text-transform: none;}
+
+
+/*
+  0 1 2 3 4 5 6 7 8 9 A B C D E F
+
+  RR GG BB
+  00 00 00 (Black)
+  FF 00 00 (Red)
+  00 FF 00 (Green)
+  00 00 FF (Blue)
+  FF FF FF (White)
+  
+
+*/
+
+.td-demo{
+  text-decoration: underline overline line-through none;
 }
 
 

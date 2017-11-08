@@ -1,0 +1,21 @@
+html{
+	font-size: 1em;
+}
+body{
+	color: #444;
+	line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+
+.menu li a{
+	color: orange;
+	font-size: .8em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+
+
+
