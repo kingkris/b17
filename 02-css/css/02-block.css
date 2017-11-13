@@ -60,14 +60,129 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
 
 
 
-
 auto;
 inherit;
 
 */
 
+
+
+
 /* ==========================================================================
    Demo of Block related properties
    ========================================================================== */
+
+/*----------  Word-spacing demo  ----------*/
+.ws-demo{
+  word-spacing: 20px;
+}
+
+/*----------  letter-spacing demo  ----------*/
+.ls-demo{
+  letter-spacing: 10px;
+}
+
+/*----------  letter-spacing demo  ----------*/
+.va-demo{
+  vertical-align: middle;
+}
+.box{
+  width: 200px;
+  height: 200px;
+  border: solid 2px red;
+  margin: 20px auto;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/*----------  letter-spacing demo  ----------*/
+.ta-r{text-align: right; }
+.ta-c{text-align: center; }
+.ta-l{text-align: left; }
+.ta-j{text-align: justify; }
+
+/*----------  text-indent demo  ----------*/
+.ti-positive{text-indent: 55px;}
+.ti-negative{text-indent: -55px;}
+
+
+/*----------  white-space demo  ----------*/
+.ws-pre{white-space: pre}
+.ws-nowrap{white-space: nowrap}
+.ws-pre-wrap{white-space: pre-wrap;}
+.ws-pre-line{white-space: pre-line;}
+.word-break{
+  word-break: break-all;
+}
+.div-overflow{
+  overflow-y: auto;
+}
+/*----------  display demo  ----------*/
+
+.bd2{
+  border: solid 2px red;
+}
+.dis-block{display: block; }
+.dis-inline{display: inline; }
+.dis-inline:hover{display: none; }
+
+
+.circle{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #F44336;
+  border: solid 3px #D32F2F;
+  color: #FFF;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+  transition: all 250ms ease;
+  position: relative;
+}
+.circle:hover{
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  transform: rotate(360deg);
+
+}
+.circle .sub-circle{
+  width: 75px;
+  height: 75px;
+  background-color: #4CAF50;
+  border: solid 3px #388E3C;
+  border-radius: 50%;
+  color: #FFF;
+  text-align: center;
+  line-height: 75px;
+  cursor: pointer;
+  transition: all 250ms ease;
+  position: absolute;
+  left: 0;right: 0;
+  top: 0;bottom: 0;
+  vertical-align: middle;
+  margin: auto;
+  opacity: 0;
+  display: none;
+  transition: all 250ms ease;
+}
+.circle:hover .sub-circle{
+  display: block;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
