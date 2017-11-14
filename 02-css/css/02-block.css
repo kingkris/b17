@@ -172,10 +172,95 @@ inherit;
   opacity: 1;
 }
 
+.circle:after{
+  content: "green";
+}
+
+.content-demo{color: crimson}
+.content-demo:before{
+  color: crimson;
+  content:"Chapter 1: ";
+  font-size: 1.4em;
+  color: #444;
+  font-weight: 400;
+}
+.content-demo:after{
+  color: crimson;
+  content:"To be continued... ";
+  font-size: .8em;
+  color: #444;
+  font-weight: 400;
+}
 
 
-
-
+.widget{
+  margin: 10px;
+}
+.widget header{
+  background-color: #1976D2;
+  position: relative;
+  border-radius: 10px 10px 0 0;
+}
+.widget .content{
+  border: solid 2px #1976D2;
+  border-radius: 0 0 10px 10px;
+  padding: 15px;
+  border-top: none;
+}
+.widget header h2{
+  color: #FFF;
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 2em;
+  margin:0 50px 0 0;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  position: relative;
+}
+.widget header h2:after{
+  background-color: #B3E5FC;
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 10px;
+  color: #BDBDBD;
+  content: attr(title);
+  display: none;
+}
+.widget header h2:hover:after{
+  display: block;
+}
+.close{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: #fff;
+  right: 20px;
+  top: 0;bottom: 0;
+  margin: auto 0;
+}
+.close:before,
+.close:after{
+  width: 3px;
+  height: 20px;
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  content: "";
+}
+.close:before{
+  left: 9px;
+  transform: rotate(45deg);
+}
+.close:after{
+  right: 8px;
+  transform: rotate(-45deg);
+}
 
 
 
