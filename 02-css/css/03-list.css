@@ -52,3 +52,35 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters
 /* ==========================================================================
    Demo of List related properties
    ========================================================================== */
+
+
+/*----------  list-style-type  ----------*/
+.ul-type{
+  list-style-type: none
+}
+.ol-type{
+  list-style-type: decimal-leading-zero;
+}
+.ol-type1{
+  list-style-type: kannada;
+}
+
+/*----------  list-style-position  ----------*/
+
+.lis-pos{
+  border: solid 1px red;
+  list-style-position: inside;
+}
+.lis-pos li{
+  border: dotted 1px blue;
+}
+
+/*----------  list-style-image  ----------*/
+
+.lis-image{
+  list-style-image: url('../img/bullet-16x16.png');
+}
+.lis-image li{
+  padding: 15px 10px ;
+}
+

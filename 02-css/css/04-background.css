@@ -29,7 +29,7 @@ Background related style properties
     ^ This property can be applied to all elements
     ^ You can't animate
 
-~  background-attachment- fixed | scroll
+~  background-attachment- scroll | fixed
     ^ default value is scroll
     ^ This property doesn't gets inherited
     ^ This property can be applied to all elements
@@ -77,5 +77,44 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
 /* ==========================================================================
    Demo of Background related properties
    ========================================================================== */
+
+/*----------  background-color  ----------*/
+.bg-c{
+  border: dotted 10px rgba(0,0,0,.5);
+  background-color: royalblue;
+  padding: 10px;
+  text-align: center;
+  transition: all 500ms ease-in;
+}
+.bg-c:hover{
+  background-color: transparent;
+}
+
+/*----------  background-image  ----------*/
+
+.box{
+  border: solid 1px #CCC;
+  min-height: 100px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.bg-i-1{
+  background-image: url('../img/bullet-20x20.png');
+  background-color: #FFCCBC;
+}
+.bg-i-2{
+  background-image: url('../img/learn-to-build-beautiful-websites.jpg');
+  background-color: #FFCCBC;
+}
+
+/*----------  background-repeat  ----------*/
+.bg-r{
+  /*background-repeat: repeat;*/
+  /*background-repeat: no-repeat;*/
+  /*background-repeat: repeat-x;*/
+  background-repeat: repeat-y;
+}
+
 
 
