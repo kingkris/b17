@@ -89,3 +89,175 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
    Demo of Border related properties
    ========================================================================== */
 
+.box{
+  min-height: 150px;
+  width: 150px;
+  margin: 20px auto;
+  background-color: #EDE7F6;
+  padding: 10px;
+  text-align: center;
+  font-size: 40px;
+}
+.box1{
+  height: 0;
+  width: 0;
+  margin: 20px auto;
+}
+.bd1{
+  border-style: solid;
+  border-width: 10px;
+  border-color: red;
+}
+.bd2{
+  border-style: solid dotted;
+  border-width: 10px 20px 30px;
+  border-color: red green blue orange;
+}
+.bd3{
+  border-style: solid ;
+  border-width: 30px;
+  border-color: red green blue orange;
+}
+.bd-up{
+  border-style: none solid solid;
+  border-width: 30px;
+  border-color: transparent transparent red;
+}
+.bd-right{
+  border-style: solid none solid solid;
+  border-width: 30px;
+  border-color: transparent transparent transparent red;
+}
+.bd-left{
+  border-style: solid solid solid none;
+  border-width: 30px;
+  border-color: transparent red transparent transparent ;
+}
+.bd-bottom{
+  border-style: solid solid none;
+  border-width: 30px;
+  border-color: red transparent transparent;
+}
+
+/*----------  border shorthand  ----------*/
+
+.bd-sh{
+  border-top: solid 5px red;
+  border-bottom: solid 5px red;
+  border-left: dashed 15px blue;
+  border-right: dotted 15px green;
+}
+.bd-sh1{
+  border: solid 5px red;
+}
+.bd-sh2{
+  border: solid 5px red;
+  border-left-color: green;
+}
+
+/*----------  Number grid  ----------*/
+
+.img-holder{
+  max-width: 700px;
+  padding: 20px;
+  margin: 20px auto;
+  border: double 4px #CCC;
+}
+.img-holder img{
+  width: 100%;
+}
+.number-grid{
+  max-width: 700px;
+  padding: 20px;
+  margin: 20px auto;
+  border: double 4px #CCC;
+  box-sizing: border-box;
+}
+.number-grid:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.number-grid *{
+  box-sizing: border-box;
+}
+
+
+.number{
+  border: solid 2px #444;
+  width: 20%;
+  min-height: 60px;
+  text-align: center;
+  font-size: 30px;
+  float: left;
+}
+
+/*----------  border-radius  ----------*/
+
+.bd-rd{
+  border-radius: 50%;
+}
+.bd-rd1{
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.bd-rd2{
+  border-radius: 50% 50% 0 0;
+}
+
+/*----------  css shapes  ----------*/
+
+.bubble{
+  width: 300px;
+  min-height: 150px;
+  background-color: lightgreen;
+  margin: 20px auto;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+.bubble:after{
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 0;bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 0;
+  height: 0;
+  border-style: solid solid solid none;
+  border-width: 30px;
+  border-color: transparent lightgreen transparent transparent ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

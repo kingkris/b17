@@ -228,6 +228,21 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
   background-repeat: no-repeat;
   background-origin: content-box;
 }
+.bg-gradient1{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4699f2+0,344ac9+100 */
+  background: #4699f2; /* Old browsers */
+  background: linear-gradient(to bottom,  #512DA8 0%,#4527A0 100%);
+}
+.bg-gradient2{
+
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4699f2+0,344ac9+100 */
+  background: #4699f2; /* Old browsers */
+  background: radial-gradient(ellipse at center,  #FF0000 0%,#00FF00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  margin: 20px auto;
+}
 
 
 
