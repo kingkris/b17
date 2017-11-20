@@ -157,3 +157,67 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
    Demo of Box related properties
    ========================================================================== */
 
+
+
+.box{
+  border: solid 4px red;
+  width: 200px;
+}
+
+
+.box1{
+  min-width: 200px;
+  max-width: 400px;
+  border: solid 3px red;
+  display: inline-block;
+  width: 650px;
+}
+
+.box2{
+  border: solid 2px red;
+  min-height: 100px;
+  max-width: 600px;
+}
+
+.box3{
+  width:300px;
+  height: 150px;
+  background-color: lightblue;
+  padding: 10px;
+  margin: 10px auto;
+  transition: all 550ms ease
+}
+.box3:hover{
+  width:400px;
+}
+
+
+/*----------  Overflow demo  ----------*/
+
+.box4{
+  width: 400px;
+  height: 200px;
+  border: solid 2px red;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+/*----------  Padding & margin demo  ----------*/
+.pbx{
+  width: 400px;
+  border: solid 5px red;
+  padding: 10px;
+  margin: 10px
+}
+
+
+
+
+
+
+
+
+
+
+
