@@ -55,6 +55,7 @@ body{
 }
 .demo{
 	padding: 10px;
+	margin-bottom: 10px;
 	border: dotted 1px #CCC;
 }
 

@@ -84,7 +84,7 @@ Box related style properties
     ^ default value is
             for ol and ul padding-left 40px
     ^ This property doesn't gets inherited
-    ^ This property can be to all elements, except
+    ^ This property can be applied to all elements, except
             padding-top and padding-bottom, they won't
             work on inline elements
     ^ You can animate
@@ -99,7 +99,7 @@ Box related style properties
 ~  margin: 
     ^ default value 
     ^ This property doesn't gets inherited
-    ^ This property can be to all elements, except
+    ^ This property can be applied to all elements, except
             margin-top and margin-bottom, they won't
             work on inline elements
     ^ You can animate
@@ -158,6 +158,9 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
    ========================================================================== */
 
 
+.demo{
+  border-color: #000;
+}
 
 .box{
   border: solid 4px red;
@@ -210,6 +213,175 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
   padding: 10px;
   margin: 10px
 }
+
+.dabba{
+  border: solid 4px red;
+  padding: 10px 10px 0;
+}
+.b1{
+  border: solid 4px blue;
+  margin-bottom: 10px;
+}
+
+.b2{
+  background-color: lightgreen;
+  /*border: solid 2px green;*/
+  /*padding: 1px*/
+}
+.b3{
+  background-color: lightblue;
+}
+
+/*----------  box-sizing demo  ----------*/
+
+.bx-sz-demo1{
+  background-color: lightpink;
+  width: 500px;
+  border: solid 10px crimson;
+  padding: 10px;
+  margin: 10px auto;
+  box-sizing: content-box;
+}
+.bx-sz-demo2{
+  background-color: lightpink;
+  width: 500px;
+  border: solid 10px crimson;
+  padding: 10px;
+  margin: 10px auto;
+  box-sizing: padding-box;
+}
+.bx-sz-demo3{
+  background-color: lightpink;
+  width: 500px;
+  border: solid 10px crimson;
+  padding: 10px;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+
+.cf:after{
+  clear: both;
+  display: block;
+  content: "";
+}
+.one-half{
+  width: 50%;
+  padding: 20px;
+  border: solid 4px #CCC;
+  float: left;
+  box-sizing: border-box;
+}
+.bg-lightblue{background-color: lightblue }
+.bg-lightgreen{background-color: lightgreen }
+
+
+/*----------  Float demo  ----------*/
+
+.fl-demo1{
+  border: solid 2px red;
+}
+.fl-demo{
+  border: solid 2px red;
+  float: left;
+}
+.bd-green{
+  border:solid 3px green;
+  background-color: lightgreen;
+}
+
+
+/**
+ *
+ * 1. The floated element looses width, gets elevated
+ * 2. The parent element collapses 
+ * 3. The sibling of floated element behaves abnormally
+ *
+ */
+
+
+/*----------  clear demo  ----------*/
+
+.clear-demo{
+  clear: both;
+}
+
+
+.fl-l{
+  border: solid 3px red;
+  min-height: 100px;
+  float: left;
+}
+.fl-r{
+  border: solid 3px red;
+  min-height: 80px;
+  float: right;
+}
+
+.cl-demo{
+  border: solid 4px black;
+  background-color: #CCC;
+  clear: both;
+}
+
+.clearfix{
+  clear: both;
+}
+.cff:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+
+/*----------  FB feed section  ----------*/
+a{
+  color: #365899;
+}
+.feed-wrap{
+  background-color: #E9EBEE;
+}
+
+
+.feed{
+  border: solid 1px #E5E7E9;
+  border-radius: 4px;
+  background-color: #FFF;
+  padding: 10px;
+}
+.feed-header{
+  
+}
+.feed-header img{
+  border-radius: 50%;
+  float: left;
+}
+.feed-header .details{
+  margin-left: 38px;
+  margin-right: 60px;
+  font-size: 14px;
+  color: #90949c;
+}
+.feed-header .details p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.feed-header .details a{
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
