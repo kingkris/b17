@@ -1,0 +1,101 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+Position related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+~  position: static | relative | absolute | fixed  |  sticky
+    ^ default value static
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+    eg: 
+      .someclass{position:relative}
+      .someclass{position:absolute}
+      .someclass{position:sticky}
+      .someclass{position:fixed}
+
+~  top   : <length>
+~  bottom: <length>
+~  right : <length>
+~  left  : <length>
+    ^ default value auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all positioned elements
+    ^ You can animate
+
+~  z-index: auto | <integer>
+    ^ default value auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all positioned elements
+    ^ You can animate
+
+
+
+~  visibility: visible | hidden | collapse
+Applies to all elements
+overflow: visible | hidden | scroll | auto
+overflow-x
+overflow-y
+
+
+auto;
+inherit;
+
+Background related important links
++++++++++++++++++++++++++++++++++++++++++++
+
+https://developer.mozilla.org/en/docs/Web/CSS/background-color
+*/
+
+/* ==========================================================================
+   Demo of Position related properties
+   ========================================================================== */
+
+
+/*----------  colors  ----------*/
+.indianred        {background-color: indianred}
+.lightcoral       {background-color: lightcoral}
+.salmon           {background-color: salmon}
+.darksalmon       {background-color: darksalmon}
+.lightsalmon      {background-color: lightsalmon}
+.crimson          {background-color: crimson}
+.red              {background-color: red}
+.firebrick        {background-color: firebrick}
+.darkred          {background-color: darkred}
+.pink             {background-color: pink}
+.lightpink{background-color: lightpink}
+.hotpink{background-color: hotpink}
+.deeppink{background-color: deeppink}
+.mediumvioletred{background-color: mediumvioletred}
+.palevioletred{background-color: palevioletred}
+.lightsalmon{background-color: lightsalmon}
+.coral{background-color: coral}
+.tomato{background-color: tomato}
+.orangered{background-color: orangered}
+.darkorange{background-color: darkorange}
+.orange{background-color: orange}
+.gold{background-color: gold}
+.yellow{background-color: yellow}
+.lightyellow{background-color: lightyellow}
+.lemonchiffon{background-color: lemonchiffon}
+.lightgoldenrodyellow{background-color: lightgoldenrodyellow}
+.papayawhip{background-color: papayawhip}
+.moccasin{background-color: moccasin}
+
+
+
+
+
+
+
+
+

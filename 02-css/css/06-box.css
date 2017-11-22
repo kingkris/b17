@@ -133,8 +133,12 @@ Box related style properties
 
 
 cursor:
+https://developer.mozilla.org/en-US/docs/Web/CSS/cursor
+
+
+
 opacity 
-resize - none | both | horizontal | vertical 
+resize - none | both | horizontal | vertical | block | inline
 Flexbox
 column-count
 column-gap
@@ -147,10 +151,11 @@ grids
 auto;
 inherit;
 
-Background related important links
+Box related important links
 +++++++++++++++++++++++++++++++++++++++++++
 
-https://developer.mozilla.org/en/docs/Web/CSS/background-color
+
+
 */
 
 /* ==========================================================================
@@ -165,6 +170,7 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
 .box{
   border: solid 4px red;
   width: 200px;
+  opacity: .5;
 }
 
 
@@ -173,7 +179,8 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
   max-width: 400px;
   border: solid 3px red;
   display: inline-block;
-  width: 650px;
+  width: 350px;
+  cursor: col-resize;
 }
 
 .box2{
@@ -372,10 +379,21 @@ a{
 }
 
 
+/*----------  resize demo  ----------*/
 
+.resize-demo{
+  width: 400px;
+  height: 300px;
+  border: solid 1px #CCC;
+  padding: 10px;
+  margin: 0 auto;
+  overflow: auto;
+  resize: both;
+}
 
-
-
+.txt-area{
+  resize: inline;
+}
 
 
 
