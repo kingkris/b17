@@ -72,24 +72,151 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
 .firebrick        {background-color: firebrick}
 .darkred          {background-color: darkred}
 .pink             {background-color: pink}
-.lightpink{background-color: lightpink}
-.hotpink{background-color: hotpink}
-.deeppink{background-color: deeppink}
-.mediumvioletred{background-color: mediumvioletred}
-.palevioletred{background-color: palevioletred}
-.lightsalmon{background-color: lightsalmon}
-.coral{background-color: coral}
-.tomato{background-color: tomato}
-.orangered{background-color: orangered}
-.darkorange{background-color: darkorange}
-.orange{background-color: orange}
-.gold{background-color: gold}
-.yellow{background-color: yellow}
-.lightyellow{background-color: lightyellow}
-.lemonchiffon{background-color: lemonchiffon}
-.lightgoldenrodyellow{background-color: lightgoldenrodyellow}
-.papayawhip{background-color: papayawhip}
-.moccasin{background-color: moccasin}
+
+.indianred,
+.lightcoral,
+.salmon,
+.crimson,
+.red,
+.firebrick,
+.darkred{color: #FFF}
+
+
+
+/*----------  position: static;  ----------*/
+
+.po-static{
+  position: static;
+  left: 300px;
+}
+
+/*----------  position: relative;  ----------*/
+
+.po-relative{
+  position: relative;
+}
+
+.box1{
+  width: 100px;
+  min-height: 40px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  float: left;
+}
+.cf:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.box1.firebrick{z-index: 1}
+
+.box1.salmon{ 
+  border-bottom: solid 4px green;
+  right: 50px;
+  top: 20px;
+}
+.box1.lightsalmon{ 
+  border-bottom: solid 4px green;
+  left: 50px;
+  top: 20px;
+  z-index: 2;
+}
+.box1.crimson{z-index: 1}
+
+.box1.salmon{} /*Targets any element with both classes "box1" and "salmon"*/
+div.salmon{} /* targets div element with class "salmon"*/
+h2#salmon{} /* targets h2 element with id "salmon"*/
+.box1 .salmon{} /* targets any element with class "salmon" 
+                   which is child of any elemnt with class "box1"*/
+.box1, .salmon{} /* This is Grouping, 
+                    targets any elements with class "salmon" or "box1"*/
+
+
+/*----------  position: absolute;  ----------*/
+
+
+.box2{
+  margin: 10px;
+  padding: 10px;
+}
+
+.po-absolute.salmon{
+  border-bottom: solid 2px red;
+  width: 150px;
+  height: 30px;
+  position: absolute;
+  opacity: .75;
+}
+
+.poa1{
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+}
+div.poa1{
+  z-index: 1
+}
+
+
+/*----------  hero-banner  ----------*/
+
+.kg-banner{position: relative;}
+.kg-banner .slide{}
+.kg-banner .slide img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.kg-banner .quote{
+  background-color: rgba(0,0,0,.5);
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #FFF;
+}
+
+.arrows > div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  top: 0;bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.arrows .left {left: 0}
+.arrows .right {right: 0}
+
+
+/*----------  position:sticky;  ----------*/
+
+
+.demo h3{
+  border-bottom: solid 5px #1565C0;
+  background-color: #FFF;
+  color: #2196F3;
+  position: sticky;
+  top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
