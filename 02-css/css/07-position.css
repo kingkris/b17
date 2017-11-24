@@ -245,34 +245,81 @@ div.poa1{
   display: block;
   clear: both;
 }
-.-kg-menu li{
+.-kg-menu > li{
   float: left;
-  padding-left: 10px; 
+  padding-left: 10px;
+  position: relative;
 }
-.-kg-menu li:first-child{
+.-kg-menu > li:first-child{
   padding-left: 0; 
 }
-.-kg-menu li a{
+.-kg-menu > li > a{
   color: #FFF;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 26px;
-  padding: 0 10px;
+  padding: 0 10px 0 32px;
+  display: block;
+  position: relative;
+  border: solid 1px #FFF;
+  border-radius: 4px;
+}
+.-kg-menu > li > a:before{
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-color: #FFF;
+  border-radius: 50%;
+  left: 8px;
+  top: 0;bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.-kg-menu > li > a:hover,
+.-kg-menu > li:hover > a,
+.-kg-menu > li.selected > a{
+  background-color: #FFF;
+  color: #8BC34A;
+}
+.-kg-menu > li > a:hover:before,
+.-kg-menu > li:hover > a:before,
+.-kg-menu > li.selected > a:before{
+  background-color: #8BC34A;
+}
+
+/*----------  Sub Menu  ----------*/
+
+
+.-kg-menu > li .kg-sub-menu{
+  background-color: #DCEDC8;
+  border: solid 2px #8BC34A;
+  padding-left: 0;
+  list-style: none;
+  position: absolute;
+  left: 10px;
+  top: 27px;
+  width: 180px;
+  border-radius: 0 0 6px 6px;
+  display: none;
+}
+.-kg-menu > li:hover .kg-sub-menu{
   display: block;
 }
-.-kg-menu li a:hover{
-  background-color: #FFF;
-  color: #8BC34A;
-  border-radius: 4px;
-}
-.-kg-menu li.selected a{
-  background-color: #FFF;
-  color: #8BC34A;
-  border-radius: 4px;
-}
 
-
+.kg-sub-menu li a{
+  display: block;
+  font-size: 13px;
+  color: #444;
+  text-decoration: none;
+  padding: 0 15px;
+  line-height: 30px;
+  border-bottom: solid 1px #CCC;
+}
+.kg-sub-menu li a:hover{
+  background-color: #F1F8E9
+}
 
 
 
