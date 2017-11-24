@@ -207,10 +207,70 @@ div.poa1{
 
 
 
+/*----------  Sub Nav styles  ----------*/
 
 
+.new-site-header{
+  background-color: #8BC34A;
+  padding: 15px;
+  border-radius: 10px
+}
+.new-site-header:after{
+  content: "";
+  display: block;
+  clear: both;
+}
 
-
+.-kg-logo{
+  margin: 0;
+  float: left;
+}
+.-kg-logo a{
+  display: block;
+}
+.-kg-logo a img{
+  display: block;
+}
+.-kg-sub-nav{
+  float: right;
+  margin-top: 14px;
+}
+.-kg-menu{
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+.-kg-menu:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.-kg-menu li{
+  float: left;
+  padding-left: 10px; 
+}
+.-kg-menu li:first-child{
+  padding-left: 0; 
+}
+.-kg-menu li a{
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 0 10px;
+  display: block;
+}
+.-kg-menu li a:hover{
+  background-color: #FFF;
+  color: #8BC34A;
+  border-radius: 4px;
+}
+.-kg-menu li.selected a{
+  background-color: #FFF;
+  color: #8BC34A;
+  border-radius: 4px;
+}
 
 
 
