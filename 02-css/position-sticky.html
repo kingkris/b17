@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Position Sticky demo</title>
+	<link rel="stylesheet" href="css/common.css">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		.container{
+			border: solid 1px #CCC;
+			border-radius: 15px;
+		}
+		.chapters h2{
+			background-color: wheat;
+			margin: 0 0 20px;
+			padding: 0 20px;
+			line-height: 40px;
+			position: sticky;
+			top: 0;
+		}
+		.container .chapters:first-child h2{
+			border-radius: 14px 14px 0 0;
+		}
+		.chapters p{
+			padding: 0 20px;
+		}
+		.header{
+			background-color: #F44336;
+			border-radius: 14px 14px 0 0;
+			padding: 10px;
+		}
+		.header:after{
+			clear: both;
+			display: block;
+			content: "";
+		}
+		.header h1{
+			color: #FFEBEE;
+			font-size: 36px;
+			margin: 0;
+			line-height: 1;
+			float: left;
+			font-weight: 400;
+		}
+		.menu-x{
+			float: right;
+			margin: 5px 0 0;
+			list-style: none;
+			padding-left: 0;
+		}
+		.menu-x li{
+			float: left;
+			margin-left: 10px;
+		}
+		.menu-x li a{
+			border: solid 1px #FFCDD2;
+			display: block;
+			padding: 0 15px;
+			border-radius: 5px;
+			line-height: 28px;
+			color: #FFCDD2;
+			text-decoration: none;
+			font-size: 14px;
+			transition: all 250ms ease;
+		}
+		.menu-x li a:hover{
+			color: #FFF;
+			font-size: 16px;
+			padding: 0 12px;
+		}
+		/*----------  box  ----------*/
+		.box{
+			margin: 20px 0;
+			padding: 20px 10px;
+			background-color: #E1F5FE;
+		}
+		.box:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.apps{
+			float: left;
+			width: 20%;
+			padding: 10px
+		}
+		.apps img{
+			border: solid 1px #FFF;
+			border-radius: 10px;
+			width: 100%;
+			display: block;
+		}
+
+		/*----------  feature styles  ----------*/
+		.feature{
+			border: solid 1px #CCC;
+			border-radius: 15px;
+			padding: 15px;
+			background-color: #FFEBEE;
+			background-image: url('img/floral-bg.png');
+			background-repeat: no-repeat;
+			/*background-position: 100% 100%;*/
+			background-position: right bottom;
+			-webkit-background-size: contain;
+			background-size: contain;
+		}
+		.feature h3{
+			margin: 0 0 10px;
+			color: #444;
+			font-size: 24px;
+			font-weight: 400;
+		}
+		.feature p{
+			color: #666;
+			font-size: 18px;
+			padding: 0 40% 0 0;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<nav class="header">
+			<h1>My Portfolio</h1>
+			<ul class="menu-x">
+				<li><a href="#">Link 01</a></li>
+				<li><a href="#">Link 02</a></li>
+				<li><a href="#">Link 03</a></li>
+				<li><a href="#">Link 04</a></li>
+				<li><a href="#">Link 05</a></li>
+				<li><a href="#">Link 06</a></li>
+			</ul>
+		</nav><!-- /.header -->
+		<div class="chapters">
+			<h2>Chapter 01</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<div class="box">
+				<div class="feature">
+					<h3>What is Vue.js?</h3>
+					<p>Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. </p>
+				</div>
+			</div><!-- /.box -->
+
+		</div><!-- /.chapters -->
+		<div class="chapters">
+			<h2>Chapter 02</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<div class="box">
+				<div class="apps">
+					<div >
+						<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+					</div>
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+				<div class="apps">
+					<img src="https://api.fnkr.net/testimg/150x200/81D4FA/FFF/?text=App">
+				</div><!-- /.apps -->
+			</div>
+		</div><!-- /.chapters -->
+		<div class="chapters">
+			<h2>Chapter 03</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+		</div><!-- /.chapters -->
+		<div class="chapters">
+			<h2>Chapter 04</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+		</div><!-- /.chapters -->
+		<div class="chapters">
+			<h2>Chapter 05</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+		</div><!-- /.chapters -->
+		<div class="chapters">
+			<h2>Chapter 06</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+		</div><!-- /.chapters -->
+		<div class="chapters">
+			<h2>Chapter 07</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+		</div><!-- /.chapters -->
+		<div class="chapters">
+			<h2>Chapter 08</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+		</div><!-- /.chapters -->
+		<div class="chapters">
+			<h2>Chapter 09</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+		</div><!-- /.chapters -->
+		<div class="chapters">
+			<h2>Chapter 10</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequuntur eveniet vitae, nobis facilis expedita cumque est aliquam temporibus delectus accusamus, nostrum in. Maiores totam, deserunt, nemo molestias dolores dolorum!</p>
+		</div><!-- /.chapters -->
+	</div><!-- /.container -->
+</body>
+</html>

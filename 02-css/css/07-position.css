@@ -233,7 +233,7 @@ div.poa1{
 }
 .-kg-sub-nav{
   float: right;
-  margin-top: 14px;
+  margin-top: 6px;
 }
 .-kg-menu{
   margin: 0;
@@ -254,15 +254,15 @@ div.poa1{
   padding-left: 0; 
 }
 .-kg-menu > li > a{
-  color: #FFF;
+  color: #F1F8E9;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 26px;
-  padding: 0 10px 0 32px;
+  padding: 0 10px 0 30px;
   display: block;
   position: relative;
-  border: solid 1px #FFF;
+  border: solid 1px #F1F8E9;
   border-radius: 4px;
 }
 .-kg-menu > li > a:before{
@@ -270,7 +270,7 @@ div.poa1{
   width: 16px;
   height: 16px;
   position: absolute;
-  background-color: #FFF;
+  background-color: #F1F8E9;
   border-radius: 50%;
   left: 8px;
   top: 0;bottom: 0;
@@ -280,7 +280,7 @@ div.poa1{
 .-kg-menu > li > a:hover,
 .-kg-menu > li:hover > a,
 .-kg-menu > li.selected > a{
-  background-color: #FFF;
+  background-color: #F1F8E9;
   color: #8BC34A;
 }
 .-kg-menu > li > a:hover:before,
@@ -292,6 +292,27 @@ div.poa1{
 /*----------  Sub Menu  ----------*/
 
 
+.-kg-menu > li.has-kg-sub-menu > a{
+  padding-right: 18px
+}
+.-kg-menu > li.has-kg-sub-menu > a:after{
+  content: "";
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  width: 6px;
+  height: 6px;
+  border-right: solid 2px #F1F8E9;
+  border-bottom: solid 2px #F1F8E9;
+  transform: rotate(45deg);
+  transition: all 250ms ease;
+}
+.-kg-menu > li.has-kg-sub-menu:hover > a:after{
+  border-right-color: #8BC34A;
+  border-bottom-color: #8BC34A;
+  transform: rotate(-45deg);
+  top: 8px
+}
 .-kg-menu > li .kg-sub-menu{
   background-color: #DCEDC8;
   border: solid 2px #8BC34A;
