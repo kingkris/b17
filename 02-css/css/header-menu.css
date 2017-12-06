@@ -1,0 +1,135 @@
+/*----------  Sub Nav styles  ----------*/
+
+
+.new-site-header{
+  background-color: #8BC34A;
+  padding: 15px;
+  border-radius: 10px
+}
+.new-site-header:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.-kg-logo{
+  margin: 0;
+  float: left;
+}
+.-kg-logo a{
+  display: block;
+}
+.-kg-logo a img{
+  display: block;
+}
+.-kg-sub-nav{
+  float: right;
+  margin-top: 6px;
+}
+.-kg-menu{
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+.-kg-menu:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.-kg-menu > li{
+  float: left;
+  padding-left: 10px;
+  position: relative;
+}
+.-kg-menu > li:first-child{
+  padding-left: 0; 
+}
+.-kg-menu > li > a{
+  color: #F1F8E9;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 0 10px 0 30px;
+  display: block;
+  position: relative;
+  border: solid 1px #F1F8E9;
+  border-radius: 4px;
+}
+.-kg-menu > li > a:before{
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-color: #F1F8E9;
+  border-radius: 50%;
+  left: 8px;
+  top: 0;bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.-kg-menu > li > a:hover,
+.-kg-menu > li:hover > a,
+.-kg-menu > li.selected > a{
+  background-color: #F1F8E9;
+  color: #8BC34A;
+}
+.-kg-menu > li > a:hover:before,
+.-kg-menu > li:hover > a:before,
+.-kg-menu > li.selected > a:before{
+  background-color: #8BC34A;
+}
+
+/*----------  Sub Menu  ----------*/
+
+
+.-kg-menu > li.has-kg-sub-menu > a{
+  padding-right: 18px
+}
+.-kg-menu > li.has-kg-sub-menu > a:after{
+  content: "";
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  width: 6px;
+  height: 6px;
+  border-right: solid 2px #F1F8E9;
+  border-bottom: solid 2px #F1F8E9;
+  transform: rotate(45deg);
+  transition: all 250ms ease;
+}
+.-kg-menu > li.has-kg-sub-menu:hover > a:after{
+  border-right-color: #8BC34A;
+  border-bottom-color: #8BC34A;
+  transform: rotate(-45deg);
+  top: 8px
+}
+.-kg-menu > li .kg-sub-menu{
+  background-color: #DCEDC8;
+  border: solid 2px #8BC34A;
+  padding-left: 0;
+  list-style: none;
+  position: absolute;
+  left: 10px;
+  top: 27px;
+  width: 180px;
+  border-radius: 0 0 6px 6px;
+  display: none;
+}
+.-kg-menu > li:hover .kg-sub-menu{
+  display: block;
+}
+
+.kg-sub-menu li a{
+  display: block;
+  font-size: 13px;
+  color: #444;
+  text-decoration: none;
+  padding: 0 15px;
+  line-height: 30px;
+  border-bottom: solid 1px #CCC;
+}
+.kg-sub-menu li a:hover{
+  background-color: #F1F8E9
+}
+
