@@ -18,6 +18,20 @@
 }
 .-kg-logo a{
   display: block;
+  position: relative;
+  padding-left: 50px;
+}
+.-kg-logo a:before{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #FFF;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 40px;
+  color: #8BC34A
 }
 .-kg-logo a img{
   display: block;
@@ -57,27 +71,32 @@
   border-radius: 4px;
 }
 .-kg-menu > li > a:before{
-  content: "";
   width: 16px;
   height: 16px;
   position: absolute;
   background-color: #F1F8E9;
+  color: #8BC34A;
   border-radius: 50%;
   left: 8px;
   top: 0;bottom: 0;
   margin-top: auto;
   margin-bottom: auto;
+  text-align: center;
+  line-height: 16px;
+  font-size: 14px;
 }
 .-kg-menu > li > a:hover,
 .-kg-menu > li:hover > a,
 .-kg-menu > li.selected > a{
   background-color: #F1F8E9;
   color: #8BC34A;
+
 }
 .-kg-menu > li > a:hover:before,
 .-kg-menu > li:hover > a:before,
 .-kg-menu > li.selected > a:before{
   background-color: #8BC34A;
+  color: #FFF;
 }
 
 /*----------  Sub Menu  ----------*/
