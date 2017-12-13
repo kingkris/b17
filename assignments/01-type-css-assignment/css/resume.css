@@ -1,4 +1,13 @@
-html {font-size: 1em;}
+html {
+  font-size: 1em;
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before{
+  box-sizing: inherit;
+}
+
 body {
   background-color: #f7f7f7;
   font-family: 'Roboto Slab', serif;
@@ -50,6 +59,81 @@ small,
 }
 .bg-pink h1 {color: #FFF}
 .bg-pink .lead {color: #CCC}
+
+
+/*----------  Gmail Tabs CSS  ----------*/
+
+.gmail-tabs{
+  clear: both;
+}
+.tabz{
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  text-align: left;
+}
+.tabz:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.tabz li{
+  float: left;
+  width: 33.3333%;
+}
+.tabz li a{
+  display: block;
+  position: relative;
+  text-decoration: none;
+  border: solid 1px #f4f4f4;
+  padding: 4px 8px;
+}
+.tabz li a:hover{
+  border-top-color: orange;
+  border-top-width: 3px;
+  background-color: #f4f4f4;
+  padding-top: 2px;
+}
+.tabz li a i{
+  float: left;
+  font-size: 40px;
+  color: #CCC;
+  width: 40px;
+  margin-top: 5px;
+}
+.tabz li a div{
+  margin-left: 50px;
+}
+.tabz li a strong{
+  color: #444;
+  font-size: 20px;
+}
+.tabz li a b{
+  color: #FFF;
+  font-size: 11px;
+  padding: 0px 4px;
+  border-radius: 3px;
+  background-color: orange;
+  display: inline-block;
+}
+.tabz li a span{
+  color: #666;
+  font-size: 12px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
