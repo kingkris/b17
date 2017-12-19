@@ -38,12 +38,12 @@
 			</nav>
 		</div><!-- /.container -->
 	</header>
-	<div class="section bg-pink">
+	<div class="section bg-primary">
 		<div class="container banner">
 			<h2>Web Designer from Bengaluru</h2>
 			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus maximus vehicula. Sed feugiat, tellus vel tristique posuere, diam</p>
 		</div><!-- /.container -->
-	</div><!-- /.section bg-pink -->
+	</div><!-- /.section bg-primary -->
 	<div class="section bg-white">
 		<nav class="gmail-tabs">
 			<ul class="tabz container">
@@ -81,9 +81,30 @@
 		</nav>
 
 		<div class="container">
-			<h2>MY STORY</h2>
+			<h2 class="title">MY STORY</h2>
 			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus maximus vehicula. Sed feugiat, tellus vel tristique posuere, diam</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat dui at lacus aliquet, a consequat enim aliquet. Integer molestie sit amet sem et faucibus. Nunc ornare pharetra dui, vitae auctor orci fringilla eget. Pellentesque in placerat felis. Etiam mollis venenatis luctus. Morbi ac scelerisque mauris. que penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc faucibus imperdiet vulputate. Morbi volutpat leo iaculis elit vehicula, eu convallis magna finibus. Suspendisse tristique ullamcorper erat a elementum. </p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat dui at lacus aliquet, a consequat enim aliquet. Integer molestie sit amet sem et faucibus. Nunc ornare pharetra dui, <abbr title="Cascading Style Sheets">CSS</abbr>vitae auctor orci fringilla eget. Pellentesque in placerat felis. Etiam mollis venenatis luctus. Morbi ac scelerisque mauris. que penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc faucibus imperdiet vulputate. Morbi volutpat leo iaculis elit vehicula, eu convallis magna finibus. Suspendisse tristique ullamcorper erat a elementum. </p>
+			<ul class="lists">
+				<li><span>Children of lists 01</span></li>
+				<li><span>Children of lists 02</span></li>
+				<li><span>Children of lists 03</span></li>
+				<li><span>Children of lists 04</span></li>
+				<li><span>Children of lists 05</span>
+					<ul>
+						<li><span>grand children of lists 1</span></li>
+						<li><span>grand children of lists 2</span></li>
+						<li><span>grand children of lists 3</span></li>
+						<li><span>grand children of lists 4</span></li>
+						<li><span>grand children of lists 5</span></li>
+						<li><span>grand children of lists 6</span></li>
+					</ul>
+				</li>
+				<li><span>Children of lists 06</span></li>
+				<li><span>Children of lists 07</span></li>
+				<li><span>Children of lists 08</span></li>
+				<li><span>Children of lists 09</span></li>
+				<li><span>Children of lists 10</span></li>
+			</ul>
 		</div><!-- /.container -->
 	</div><!-- /.section bg-white -->
 	<div class="bg-lightgrey">
@@ -106,6 +127,9 @@
 		jQuery(document).ready(function($) {
 			$('.hamburger').click(function() {
 				$(this).toggleClass('close').next('.menu').slideToggle('fast');
+				//$('.banner').empty();
+				$('.title').addClass('roll-in-blurred-right');
+
 			});
 		});
 	</script>
