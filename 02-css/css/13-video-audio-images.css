@@ -48,9 +48,35 @@ http://animista.net/
    Demo of Position related properties
    ========================================================================== */
 .responsive-img img{
-  width: 100%;
+  max-width: 100%;
   display: block;
 }
+
+
+/*----------  Width demo  ----------*/
+
+*{
+  box-sizing: border-box;
+}
+
+.width-demo{
+  max-width: 1000px;
+  margin: 15px auto;
+  padding:15px;
+  border:double 5px red;
+  background-color: #F3F3F3;
+}
+.dabba{
+  width: 100%;
+  background-color: #9bd586;
+  padding:10px;
+}
+
+.dabba img{
+  display: block;
+  width: 50vw
+}
+
 
 
 
