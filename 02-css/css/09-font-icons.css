@@ -148,3 +148,12 @@ http://animista.net/
 .pound .price:before  {content: "\00a3"; } /*pound symbol*/
 
 
+
+.resp-img{
+  border: solid 3px red;
+}
+.resp-img img{
+  width: 100%;
+  display: block;
+}
+
