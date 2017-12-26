@@ -51,26 +51,100 @@ http://animista.net/
 
 /*----------  form1 styles  ----------*/
 
-.form1{
+form{
   background-color: #CCC;
   padding: 50px;
   border-radius: 10px;
 }
-.form1 fieldset{
+fieldset{
   border: dotted 1px #eee;
 }
-.form1 .f-row{
+.f-row{
   background-color: #FFF;
   padding: 15px;
   margin-bottom: 15px;
 }
-.form1 .f-row label{
+.f-row:after{
+  display: block;
+  clear: both;
+  content: "";
+}
+.f-row label{
   display: inline-block;
   width: 150px;
   font-size: 13px;
   text-align: right;
   padding-right: 5px;
+  border: dotted 1px #ccc;
 }
+.rd-row{
+  display: inline-block;
+  padding-right: 10px
+}
+.rd-row label{
+  text-align: left;
+  width: auto;
+}
+
+/*----------  Styling input type text  ----------*/
+
+.f-row input[type="email"],
+.f-row input[type="text"],
+.input-box{
+  padding: 4px 6px;
+  border: solid 1px #CCC;
+  border-radius: 3px;
+  color: #546E7A;
+  font-size: 14px;
+  width: 250px;
+}
+.f-row input[type="email"]:hover,
+.f-row input[type="text"]:hover,
+.input-box:hover{
+  border-color: #90CAF9;
+  box-shadow: 0 0 5px 2px #BBDEFB;
+}
+.f-row input[type="text"]:active,
+.f-row input[type="text"]:focus,
+.f-row input[type="email"]:active,
+.f-row input[type="email"]:focus,
+.input-box:active,
+.input-box:focus{
+  border-color: #1E88E5;
+  box-shadow: 0 0 5px 2px #42A5F5;
+}
+.f-row input[type="email"]:invalid,
+.f-row input[type="text"]:invalid,
+.input-box:invalid{
+  border-color: #E53935;
+  box-shadow: 0 0 5px 2px #E57373;
+}
+
+.f-row .error-msg{
+  font-size: 13px;
+  color: #F44336;
+  padding-left: 20px;
+  display: none;
+}
+.f-row input[type="email"]:invalid + .error-msg,
+.f-row input[type="text"]:invalid + .error-msg,
+.input-box:invalid + .error-msg{
+  display: inline-block;
+}
+.f-row input[disabled]{
+  color: gray;
+  background-color: lightgray
+}
+
+
+
+
+
+/*----------  Styling placeholder with fallbacks  ----------*/
+
+.f-row input::-ms-placeholder    {color: #CFD8DC; font-style: italic; }
+.f-row input::-webkit-placeholder{color: #CFD8DC; font-style: italic; }
+.f-row input::placeholder        {color: #CFD8DC; font-style: italic; }
 
 
 
