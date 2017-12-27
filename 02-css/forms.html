@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/15-forms.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 </head>
 <body>
 	<header class="site-header">
@@ -45,6 +45,16 @@
 		<p>Learn about all style properties related to lists in a eloborate way with examples</p>
 	</div><!-- /.hero-banner -->
 	<div class="container">
+
+		<div class="cover-pic">
+			<h1> “Some people never go crazy. What truly horrible lives they must lead.”
+			― <cite>Charles Bukowski </cite></h1>
+		</div>
+
+
+
+
+
 		<h2 class="sub-title"><span>Demo of</span> &lt;form&gt; tag with method="get"</h2>
 
 		<div class="demo">
@@ -93,10 +103,22 @@
 						<input type="text" name="fname" id="f1-1" placeholder="Enter your first name">
 					</div><!-- /.f-row -->
 					<div class="f-row">
-						<label for="f1-2">Required</label>
-						<input type="text" name="f1-2" id="f1-2" placeholder="Enter your last name" required>
+						<label for="f1-2">Required - icon bg</label>
+						<input type="text" name="f1-2" id="f1-2" placeholder="Enter your last name" required class="input-icon">
 						<div class="error-msg">You need to add your last name</div>
 					</div><!-- /.f-row -->
+
+
+
+					<div class="f-row">
+						<label for="f1-22">Required - font icon</label>
+						<div class="input-font-icon">
+							<input type="text" name="f1-22" id="f1-22" placeholder="Enter your last name">
+						</div>
+						<div class="error-msg">You need to add your last name</div>
+					</div><!-- /.f-row -->
+
+
 					<div class="f-row">
 						<label for="f1-3">Error Message</label>
 						<input type="email" name="f1-3" id="f1-3" placeholder="Enter your email" required>
@@ -154,12 +176,12 @@
 							<label for="f2-rd2">Option 2</label>
 						</div>
 						<div class="rd-row">
-							<input type="radio" id="f2-rd3" name="f2-rd" value="Option 3" >
-							<label for="f2-rd3">Option 3</label>
+							<input type="radio" id="f2-rd3" name="f2-rd" value="Option 3" checked >
+							<label for="f2-rd3">Option 3 - preselected </label>
 						</div>
 						<div class="rd-row">
-							<input type="radio" id="f2-rd4" name="f2-rd" value="Option 4" >
-							<label for="f2-rd4">Option 4</label>
+							<input type="radio" id="f2-rd4" name="f2-rd" value="Option 4" disabled >
+							<label for="f2-rd4">Option 4 - disabled</label>
 						</div>
 					</div><!-- /.f-row -->
 
@@ -180,6 +202,43 @@
 						<div class="rd-row">
 							<input type="checkbox" id="f2-cb4" name="f2-cb" value="Option 4" >
 							<label for="f2-cb4">Option 4</label>
+						</div>
+					</div><!-- /.f-row -->
+					<div class="f-row">
+						<p>Checkboxes with styles</p>
+						<div class="rd-row">
+							<input type="checkbox" id="f2-acb1" name="f2-acb" value="Option 1" >
+							<label for="f2-acb1">Option 1</label>
+						</div>
+						<div class="rd-row">
+							<input type="checkbox" id="f2-acb2" name="f2-acb" value="Option 2" >
+							<label for="f2-acb2">Option 2</label>
+						</div>
+						<div class="rd-row">
+							<input type="checkbox" id="f2-acb3" name="f2-acb" value="Option 3" >
+							<label for="f2-acb3">Option 3</label>
+						</div>
+						<div class="rd-row">
+							<input type="checkbox" id="f2-acb4" name="f2-acb" value="Option 4" >
+							<label for="f2-acb4">Option 4</label>
+						</div>
+						<div class="f-row">
+							<p>Few links to check</p>
+							<div class="info-text">
+								<a href="https://tympanus.net/codrops/tag/checkbox/">Radio buttons</a>
+							</div>
+							<div class="info-text">
+								<a href="https://tympanus.net/Development/AnimatedCheckboxes/">Animated Dropdowns</a>
+							</div>
+							<div class="info-text">
+								<a href="https://tympanus.net/Tutorials/CustomDropDownListStyling/">Dropdowns</a>
+							</div>
+							<div class="info-text">
+								<a href="https://css-tricks.com/almanac/properties/s/scrollbar/">Styling Scrollbars</a>
+							</div>
+							<div class="info-text">
+								<a href="https://codepen.io/devstreak/pen/dMYgeO">Codepen Styling Scrollbars</a>
+							</div>
 						</div>
 					</div><!-- /.f-row -->
 					<div class="f-row">
@@ -207,12 +266,192 @@
 						<label for="f2-8">hidden</label>
 						<input type="hidden" name="f2-8" id="f2-8" value="hidden fields are used to pass on some values to other pages">
 					</div><!-- /.f-row -->
-
+				</fieldset>
+				<fieldset>
+					<legend>demo of textarea</legend>
 					<div class="f-row">
+						<label for="f2-9">textarea</label>
+						<textarea name="f2-9" id="f2-9" placeholder="This is a textarea" class="input-box input-txtarea">This would appear inside textarea</textarea>
+					</div><!-- /.f-row -->
+				</fieldset>
+				<fieldset>
+					<legend>demo of select</legend>
+					<div class="f-row">
+						<label for="f2-10">select</label>
+						<select name="f2-10" id="f2-10" class="input-box">
+							<option value="">Choose your city</option>
+							<option value="Mysuru">Mysuru</option>
+							<option value="Bengaluru">Bengaluru</option>
+							<option value="Tumakuru">Tumakuru</option>
+							<option value="Managaluru">Managaluru</option>
+							<option value="Madduru">Mysuru</option>
+						</select>
+					</div><!-- /.f-row -->
+					<div class="f-row">
+						<label for="f2-11">select - multiple</label>
+						<select name="f2-11" id="f2-11" class="input-box input-select" multiple>
+							<option value="">Choose your city</option>
+							<option value="Mysuru">Mysuru</option>
+							<option value="Bengaluru">Bengaluru</option>
+							<option value="Tumakuru">Tumakuru</option>
+							<option value="Mangaluru">Mangaluru</option>
+							<option value="Madduru">Madduru</option>
+							<option value="Madduru">Madduru</option>
+							<option value="Madduru">Madduru</option>
+							<option value="Madduru">Madduru</option>
+							<option value="Madduru">Madduru</option>
+							<option value="Madduru">Madduru</option>
+							<option value="Madduru">Madduru</option>
+						</select>
+					</div><!-- /.f-row -->
+					<div class="f-row">
+						<label for="f2-12">select - optgroup</label>
+						<select name="f2-12" id="f2-12" class="input-box">
+							<option value="">Choose your city</option>
+							<optgroup label="Major Cities">
+								<option value="Mysuru">Mysuru</option>
+								<option value="Bengaluru">Bengaluru</option>
+								<option value="Tumakuru">Tumakuru</option>
+								<option value="Mangaluru">Mangaluru</option>
+							</optgroup>
+							<optgroup label="Other Cities">
+								<option value="Madduru">Madduru</option>
+								<option value="Mandya">Mandya</option>
+								<option value="Kolar">Kolar</option>
+								<option value="Hosapete">Hosapete</option>
+								<option value="Ramanagara">Ramanagara</option>
+								<option value="Channapattana">Channapattana</option>
+								<option value="Malavalli">Malavalli</option>
+							</optgroup>
+						</select>
+					</div><!-- /.f-row -->
+					<div class="f-row">
+						<label for="f2-12">select  - preselected</label>
+						<select name="f2-12" id="f2-12" class="input-box">
+							<option value="">Choose your city</option>
+							<optgroup label="Major Cities">
+								<option value="Mysuru">Mysuru</option>
+								<option value="Bengaluru">Bengaluru</option>
+								<option value="Tumakuru">Tumakuru</option>
+								<option value="Mangaluru">Mangaluru</option>
+							</optgroup>
+							<optgroup label="Other Cities">
+								<option value="Madduru" selected>Madduru</option>
+								<option value="Mandya">Mandya</option>
+								<option value="Kolar">Kolar</option>
+								<option value="Hosapete">Hosapete</option>
+								<option value="Ramanagara">Ramanagara</option>
+								<option value="Channapattana">Channapattana</option>
+								<option value="Malavalli">Malavalli</option>
+							</optgroup>
+						</select>
+					</div><!-- /.f-row -->
+					<div class="f-row">
+						<label for="f2-112">select2 - jQuery plugin</label>
+						<select name="f2-112" id="f2-112" class="input-box city-dropdown">
+							<option value="">Choose your city</option>
+							<optgroup label="Major Cities">
+								<option value="Mysuru">Mysuru</option>
+								<option value="Bengaluru">Bengaluru</option>
+								<option value="Tumakuru">Tumakuru</option>
+								<option value="Mangaluru">Mangaluru</option>
+							</optgroup>
+							<optgroup label="Other Cities">
+								<option value="Madduru" selected>Madduru</option>
+								<option value="Mandya">Mandya</option>
+								<option value="Kolar">Kolar</option>
+								<option value="Hosapete">Hosapete</option>
+								<option value="Ramanagara">Ramanagara</option>
+								<option value="Channapattana">Channapattana</option>
+								<option value="Malavalli">Malavalli</option>
+							</optgroup>
+						</select>
+					</div><!-- /.f-row -->
+					<div class="f-row">
+						<label for="f2-113">select2 - jQuery plugin</label>
+						<select name="f2-113" id="f2-113" class="input-box">
+							<option value="">Choose your city</option>
+							<optgroup label="Major Cities">
+								<option value="Mysuru">Mysuru</option>
+								<option value="Bengaluru">Bengaluru</option>
+								<option value="Tumakuru">Tumakuru</option>
+								<option value="Mangaluru">Mangaluru</option>
+							</optgroup>
+							<optgroup label="Other Cities">
+								<option value="Madduru" selected>Madduru</option>
+								<option value="Mandya">Mandya</option>
+								<option value="Kolar">Kolar</option>
+								<option value="Hosapete">Hosapete</option>
+								<option value="Ramanagara">Ramanagara</option>
+								<option value="Channapattana">Channapattana</option>
+								<option value="Malavalli">Malavalli</option>
+							</optgroup>
+						</select>
+					</div><!-- /.f-row -->
+				</fieldset>
+				<fieldset>
+					<legend>demo of input with html5 types</legend>
+					<div class="f-row">
+						<label for="f3-1">input - email</label>
+						<input type="email" name="f3-1" placeholder="Your email id eg. kris@htmlden.com" id="f3-1">
+						<span class="info-text">Check <a href="http://html5pattern.com/">html5 patterns</a></span>
+					</div><!-- /.f-row -->
+					<div class="f-row">
+						<label for="f3-2">input - url</label>
+						<input type="url" name="f3-2" placeholder="Your website eg. www.htmlden.com" id="f3-2" class="input-box">
+					</div><!-- /.f-row -->
+					<div class="f-row">
+						<label for="f3-3">input - tel</label>
+						<input type="tel" name="f3-3" placeholder="Your mobile eg. +91 98804 12345" id="f3-3" class="input-box">
+					</div><!-- /.f-row -->
+					<div class="f-row">
+						<label for="f3-4">input - number</label>
+						<input type="number" name="f3-4" placeholder="Your age" id="f3-4">
+					</div><!-- /.f-row -->
+					<div class="f-row">
+						<label for="f3-5">number - min, max, step</label>
+						<input type="number" name="f3-5" placeholder="Your age" id="f3-5" min="100" max="200" step="10">
+					</div><!-- /.f-row -->
+					<div class="f-row">
+						<label for="f3-6">input - range</label>
+						<input type="range" name="f3-6" id="f3-6" min="0" max="1000" step="100" >
+					</div><!-- /.f-row -->
+					<div class="f-row">
+						<label for="f3-7">input - date</label>
+						<input type="date" name="f3-7" id="f3-7" >
+
+						<div id="alert"></div>
+						<div class="alert alert-info">
+							<p id="target">Output Date</p>
+						</div>
+					</div><!-- /.f-row -->
+					<div class="f-row">
+						<label for="f3-8">input - color</label>
+						<input type="color" name="f3-8" id="f3-8" >
+
+					</div><!-- /.f-row -->
+					<div class="f-row">
+						<label for="f3-9">input - search</label>
+						<input type="serach" name="f3-9" id="f3-9" >
+						<span class="info-text">Check <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search">mdn search</a> <a href="https://css-tricks.com/webkit-html5-search-inputs/">CSS tricks search</a></span>
+					</div><!-- /.f-row -->
+				</fieldset>
+
+					<div class="last-row">
 						<input type="submit" name="" value="Submit">
+						<input type="reset" name="" value="Reset">
 					</div>
 
-				</fieldset>
+			</form>
+		</div><!-- /.demo -->
+
+		<h2 class="sub-title"><span>Demo of</span> Responsive forms and styling them</h2>
+		<div class="enquiry-wrap">
+			<form action="enquiry-form" method="get" class="enquiry-form">
+				<div class="en-row">
+					<label for=""></label>
+
+				</div>
 			</form>
 		</div><!-- /.demo -->
 
@@ -223,5 +462,52 @@
 	<footer class="site-footer">
 		<p>&copy; 2017 - all rights reserved, <a href="http://www.htmlden.com/">htmlden - school of webdesign</a></p>
 	</footer><!-- /.site-footer -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+	<script>
+		if (Modernizr.inputtypes.date) {
+	/* just the alert message, don't worry about this bit! */
+	$('<div class="alert alert-success"><p>Yay! <code>input="date"</code> for you!</p></div>').appendTo('#alert');
+} else {
+	/* get jQuery-ui css */
+	$('<link/>', {
+		rel: 'stylesheet',
+		type: 'text/css',
+		href: 'https://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css'
+	}).appendTo('head');
+	/* get jQuery-ui */
+	$.getScript('https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js')
+		/* wait till it's loaded */
+		.done(function() {
+			/* apply datepicker ui to selected element */
+			$('input[type="date"]').datepicker({
+				/* Keep the date consistent */
+				dateFormat: 'yy-mm-dd'
+			});
+		});
+	/* This just changes the alert message, just ignore it! */
+	$('<div class="alert alert-warning"><p>Sorry, no <code>input="date"</code> for you! Time for jQuery UI</p></div>').appendTo('#alert');
+}
+
+/* This bit just prints the date, so don't worry about it! */
+$(document).ready(function() {
+	$('input[type="date"]').change(function() {
+		/* on change get value then print to page */
+		var outputDate = (this.value);
+		$("#target").text(outputDate);
+	});
+
+	$('.city-dropdown').select2();
+	$("#f2-113").select2({
+	    placeholder: "Select a State",
+	    allowClear: true
+	});
+
+
+});
+	</script>
 </body>
 </html>
