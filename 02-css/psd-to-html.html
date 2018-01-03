@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>PSD to html | Game of CSS - B17</title>
+	<meta name="description" content="Learn CSS properties in fun game style">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/16-psd-to-html.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+</head>
+<body>
+	<header class="site-header">
+		<div class="logo">
+			<a href="index.html">Game of CSS</a>
+		</div>
+ 		<nav class="site-nav">
+ 			<ul class="menu">
+ 				<li><a href="type.html">Type</a></li>
+ 				<li><a href="block.html">Block</a></li>
+ 				<li><a href="list.html">List</a></li>
+ 				<li><a href="background.html">Background</a></li>
+ 				<li><a href="border.html">Border</a></li>
+ 				<li><a href="box.html">Box</a></li>
+ 				<li><a href="position.html">Position</a></li>
+ 				<li><a href="at-rules.html">@ Rules</a></li>
+ 				<li><a href="font-icons.html">Font Icons</a></li>
+ 				<li><a href="animations.html">Animations</a></li>
+ 				<li><a href="flex.html">Flex</a></li>
+ 				<li><a href="grids.html">Grids</a></li>
+ 				<li><a href="video-audio.html">Video &amp; Audio</a></li>
+ 				<li><a href="tables.html">Tables</a></li>
+ 				<li><a href="emails.html">Emails</a></li>
+ 				<li><a href="forms.html">Forms</a></li>
+ 				<li class="active"><a href="psd-to-html.html">PSD to html</a></li>
+ 			</ul>
+ 		</nav>
+	</header><!-- /.site-header -->
+	<div class="banner">
+		<h1>
+
+			psd to html
+		</h1>
+		<p>Learn about all style properties related to lists in a eloborate way with examples</p>
+	</div><!-- /.hero-banner -->
+	<h2 class="sub-title"><span>Demo of</span> Header with logo, nav and Social media icons</h2>
+
+<!--======================================
+=            Header Beginning            =
+=======================================-->
+<header class="x-site-header">
+	<div class="x-container">
+		<div class="x-logo">
+			<a href="#"><img src="img/game-of-css-logo.png" alt="Game of CSS" title="Game of CSS" /></a>
+		</div>
+		<div class="x-ham">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<nav class="x-sitenav">
+			<ul class="x-menu">
+				<li class="active"><a href="home.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<ul class="x-social-links">
+				<li><a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i><span>Linkedin</span></a></li>
+				<li><a href="#"><i class="fa fa-google"></i><span>Google</span></a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+
+<!--====  End of Header  ====-->
+
+
+	<footer class="site-footer">
+		<p>&copy; 2017 - all rights reserved, <a href="http://www.htmlden.com/">htmlden - school of webdesign</a></p>
+	</footer><!-- /.site-footer -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+	<script>
+		if (Modernizr.inputtypes.date) {
+	/* just the alert message, don't worry about this bit! */
+	$('<div class="alert alert-success"><p>Yay! <code>input="date"</code> for you!</p></div>').appendTo('#alert');
+} else {
+	/* get jQuery-ui css */
+	$('<link/>', {
+		rel: 'stylesheet',
+		type: 'text/css',
+		href: 'https://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css'
+	}).appendTo('head');
+	/* get jQuery-ui */
+	$.getScript('https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js')
+		/* wait till it's loaded */
+		.done(function() {
+			/* apply datepicker ui to selected element */
+			$('input[type="date"]').datepicker({
+				/* Keep the date consistent */
+				dateFormat: 'yy-mm-dd'
+			});
+		});
+	/* This just changes the alert message, just ignore it! */
+	$('<div class="alert alert-warning"><p>Sorry, no <code>input="date"</code> for you! Time for jQuery UI</p></div>').appendTo('#alert');
+}
+
+/* This bit just prints the date, so don't worry about it! */
+$(document).ready(function() {
+	$('input[type="date"]').change(function() {
+		/* on change get value then print to page */
+		var outputDate = (this.value);
+		$("#target").text(outputDate);
+	});
+
+	$('.city-dropdown').select2();
+	$("#f2-113").select2({
+	    placeholder: "Select a State",
+	    allowClear: true
+	});
+
+
+});
+	</script>
+</body>
+</html>
