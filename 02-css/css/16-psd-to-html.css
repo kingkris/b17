@@ -47,10 +47,23 @@
 .x-logo{
   float: left;
   padding: 10px 0;
+  margin: 0;
 }
 .x-logo a,
 .x-logo img{
   display: block;
+  font-size: 14px;
+  line-height: .85;
+  color: #AED581;
+  text-decoration: none;
+  font-weight: 400;
+}
+.x-logo a span{
+  display: block;
+  font-size: 30px;
+  color: #FFF;
+  margin-top: 5px;
+  margin-left: -1px
 }
 @media (max-width: 979px) {
   .x-ham{
@@ -153,9 +166,11 @@
   position: absolute;
   width: 1px;
 }
-.x-social-links li a i{
+.x-social-links li a{
   font-size: 20px;
+  text-decoration: none;
 }
+.x-social-links li a:before,
 .x-social-links li a i:before{
   width: 30px;
   height: 30px;
@@ -166,13 +181,59 @@
   text-align: center;
   font-size: 20px;
   color: #CCC;
-  display: block
+  display: block;
 }
 
 /*=====  End of Header Styles  ======*/
 
 
 
+/*==========================================
+=            Itunes like design            =
+==========================================*/
+.container{
+  border: solid 3px red;
+}
+.container:after{
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.col1{width: 100%;}
+.col2{width: 50%;}
+.col3{width: 33.333%;}
+.col4{width: 25%;}
+.col5{width: 20%;}
+.playlists{
+  float: left;
+  padding: 8px;
+}
+.play-wrap{
+  background-color: #F1F8E9;
+  border-radius: 5px;
+  padding: 10px;
+}
+.playlists img{
+  width: 100%;
+  display: block;
+}
+.info{
+}
+.info span{
+  display: block;
+  margin-right: 80px;
+}
+.info p{
+  display: block;
+  margin:0 80px 0 0;
+
+}
+.info a{
+  float: right;
+}
+
+/*=====  End of Itunes like design  ======*/
 
 
 
