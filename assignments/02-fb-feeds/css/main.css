@@ -1,0 +1,450 @@
+/*
+ * This code is done using html5boilerplate, bootstrap 4 and other fixes.
+ * We at dzineden use this code as the base for our websites and apps,
+ */
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+html {font-size: 1em;}
+body {
+  background-color: #e9ebee;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+p {margin-bottom: 1.3em;}
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.414em 0 0.5em;
+  line-height: 1.2;
+}
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+h2 {font-size: 2.369em;}
+h3 {font-size: 1.777em;}
+h4 {font-size: 1.333em;}
+small, .font_small {font-size: 0.75em;}
+
+
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*----------  Responsive embed  ----------*/
+.img-wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+.img-wrap img,
+.img-wrap .iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  border: 0;
+  transition: all 800ms ease;
+  border: solid 1px red;
+}
+.img-16by9::before {padding-top: 56.25%; }
+.img-4by3::before  {padding-top: 75%; }
+.img-3by4::before  {padding-top: 133.33%; }
+.img-1by1::before  {padding-top: 100%; }
+
+/*----------  Container  ----------*/
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  transition: all 300ms ease;
+}
+.container::before {
+  display: table;
+  content: ""
+}
+.container::after {
+  display: table;
+  clear: both;
+  content: ""
+}
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+    max-width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+    max-width: 100%;
+  }
+}
+/*
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+    max-width: 100%;
+  }
+}
+*/
+
+/*----------  grids  ----------*/
+
+.row {
+  margin-right: -10px;
+  margin-left: -10px
+}
+.row::before {
+  display: table;
+  content: ""
+}
+.row::after {
+  display: table;
+  clear: both;
+  content: ""
+}
+.column,
+.single-column {
+  padding: 10px;
+}
+.one-eighth {width:33.33%;}
+@media (min-width: 576px) {
+  .column        {float: left }
+  .one-half      {width: 100% }
+  .one-third     {width: 100% }
+  .two-thirds    {width: 100% }
+  .one-fourth    {width: 50%  }
+  .one-fifth     {width: 50%  }
+  .one-sixth     {width: 33.33%}
+  .two-sixth     {width: 66.66%}
+  .one-eighth    {width: 25%}
+}
+@media (min-width: 768px){
+  .one-third     {width: 50% }
+  .two-thirds    {width: 50% }
+  .one-fourth    {width: 50% }
+  .one-fifth     {width: 33.333333% }
+  .one-eighth    {width: 16.66%}
+}
+@media (min-width: 992px){
+  .one-half      {width: 50% }
+  .one-third     {width: 33.333333% }
+  .two-thirds    {width: 66.666667% }
+  .one-fourth    {width: 25% }
+  .three-fourths {width: 75% }
+  .one-fifth     {width: 20% }
+  .four-fifths   {width: 80% }
+  .one-sixth     {width: 16.66%}
+  .two-sixth     {width: 33.32%}
+  .one-eighth    {width: 12.5%}
+}
+
+
+
+.bg-lightgreen{background-color: lightgreen;padding: 10px}
+.bg-lightblue{background-color: lightblue;padding: 10px}
+
+
+/*----------  Site Header  ----------*/
+
+.site-header{
+  background-color: #673fb4;
+  text-align: center;
+  color: #FFF;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.site-header h1{
+  margin: 0;
+}
+
+/*----------  Feeds  ----------*/
+
+.feeds{}
+.feed{
+  background-color: #FFF;
+  border: solid 1px #dfe1e4;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.feed:after{
+  clear: both;
+  display: block;
+  content: "";
+}
+.feed .fr i{
+  cursor: pointer;
+  color: #CCC;
+}
+.feed .fr i:hover{
+  color: #F00;
+}
+.feed-header{
+  margin: 0 30px 10px 0;
+}
+.feed-header img{
+  border-radius: 50%;
+  float: left;
+}
+.feed-header h2{
+  margin: 0 0 5px 50px;
+  font-size: 1.5em;
+}
+.feed-header h2 a{
+  color: #444;
+  text-decoration: none;
+}
+.feed-header h2 a:hover{
+  color: #673fb4;
+}
+.feed-details{
+  margin: 0 0 0 50px;
+  font-size: .75em
+}
+.feed-details a{
+  color: #673fb4;
+  text-decoration: none;
+}
+.feed-details a:hover{
+  text-decoration: underline;
+}
+.feed-content{
+  clear: both;
+}
+.feed-content p{
+  margin-top: 0;
+}
+.feed-content p:last-child{
+  margin-bottom: 0;
+}
+/*----------  Widgets  ----------*/
+
+.widget{
+  background-color: #FFF;
+  border: solid 1px #dfe1e4;
+  padding: 5px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.widget img{
+  width: 100%;
+  display: block;
+}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.hidden {
+    display: none !important;
+}
+.fl{float: left;}
+.fr{float: right;}
+.cb{clear: both}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+.invisible {
+    visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    p:first-letter,
+    div:first-letter,
+    blockquote:first-letter,
+    li:first-letter,
+    p:first-line,
+    div:first-line,
+    blockquote:first-line,
+    li:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
